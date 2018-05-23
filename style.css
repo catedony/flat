@@ -325,20 +325,28 @@ h2 {
 	color: rgb(82, 161, 173);
 }
 
-.video {
-	background-color: rgb(234, 235, 238);
+.video-container {
+	background-color: rgb(41, 46, 51);
+	height: auto;
 }
 
-.video h2 {
+.video-container h2 {
+	background-color: rgb(234, 235, 238);
 	color: #4b596c;
 	font-size: 2.1rem;
 	font-weight: 500;
 	padding: 2.5rem 0;
+	margin: 0;
 }
-
+.video {
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
 .message {
 	background-color: rgb(41, 46, 51);
-	padding: 1.5rem 0;
+	padding: 1rem 0 1.5rem;
 }
 
 @media (min-width: 990px) {
@@ -465,23 +473,22 @@ footer img {
 }
 
 .btn {
-	-webkit-transform: scale(1);
+	
 	        transform: scale(1);
-	-webkit-transition: 0.5s, -webkit-transform;
-	transition: 0.5s, -webkit-transform;
+	
 	transition: transform, 0.5s;
-	transition: transform, 0.5s, -webkit-transform;
+	
 }
 
 .btn:hover {
 	color: #fff;
-	-webkit-transform: scale(1.1);
+	
 	        transform: scale(1.1);
 }
 
 .logo a,
 .footer-logo a {
-	-webkit-transition: color, 0.5s;
+	
 	transition: color, 0.5s;
 }
 
