@@ -473,19 +473,21 @@ footer img {
 }
 
 .btn {
-	
-	        transform: scale(1);
-	
+	transform: scale(1);
 	transition: transform, 0.5s;
 	
 }
 
 .btn:hover {
 	color: #fff;
-	
-	        transform: scale(1.1);
+	transform: scale(1.1);
 }
 
+.btn:focus, 
+.btn:active {
+	outline: none;
+	box-shadow: 0 0 2px white;
+}
 .logo a,
 .footer-logo a {
 	
