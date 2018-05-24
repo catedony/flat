@@ -35,7 +35,7 @@ a {
 
 header {
 	background-color: rgba(69, 84, 105, 0.95);
-	background-image: url("img/Rectangle%202%20(1).png");
+	background-image: url("img/header-bg.png");
 	background-size: cover;
 	color: #ffffff;
 }
@@ -92,7 +92,7 @@ h2 {
 .paper {
 	width: 13rem;
 	height: 14rem;
-	background-image: url("img/Vector%20Smart%20Object%20(2).png");
+	background-image: url("img/blank.png");
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
@@ -372,7 +372,7 @@ h2 {
 .mail-icon {
 	width: 5rem;
 	height: 5rem;
-	background-image: url("img/__%20Contact%20Icon%20__.png");
+	background-image: url("img/contact-icon.png");
 	background-repeat: no-repeat;
 	background-size: contain;
 }
@@ -510,7 +510,7 @@ footer img {
 	display: inline-block;
 	height: 0.6rem;
 	width: 0.6rem;
-	background-image: url("img/_.png");
+	background-image: url("img/star.png");
 	background-size: contain;
 	background-repeat: no-repeat;
 	right: -1rem;
