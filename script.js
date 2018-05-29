@@ -1,21 +1,18 @@
-var slideIndex = 1;
+let slideIndex = 1;
 showSlides(slideIndex);
 
-function plusSlides(n) {
-	showSlides(slideIndex += n);
-}
+let plusSlides = n => showSlides(slideIndex += n);
 
-function showSlides(n) {
-	var slides = document.getElementsByClassName('slides');
-
+let showSlides = n => {
+	const slides = document.getElementsByClassName('slides');
 	if (n > slides.length) {
 		slideIndex = 1;
 	}
 	if (n < 1) {
 		slideIndex = slides.length;
 	}
-	for (var i = 0; i < slides.length; i++) {
-		slides[i].style.display = 'none';
+	for (let slide of slides) {
+		slide.style.display = 'none';
 	}
 	slides[slideIndex - 1].style.display = 'block';
-}
+};
