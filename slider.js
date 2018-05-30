@@ -1,10 +1,8 @@
 let slideIndex = 1;
-showSlides(slideIndex);
-
 let plusSlides = n => showSlides(slideIndex += n);
 
 let showSlides = n => {
-	const slides = document.getElementsByClassName('slides');
+	let slides = document.getElementsByClassName('slides');
 	if (n > slides.length) {
 		slideIndex = 1;
 	}
@@ -16,3 +14,5 @@ let showSlides = n => {
 	}
 	slides[slideIndex - 1].style.display = 'block';
 };
+
+showSlides(slideIndex);
