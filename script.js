@@ -1,3 +1,4 @@
+//slider
 let slideIndex = 1;
 let plusSlides = n => showSlides(slideIndex += n);
 
@@ -16,3 +17,12 @@ let showSlides = n => {
 };
 
 showSlides(slideIndex);
+
+//tooltips
+$(function () {
+	$('[data-toggle="tooltip"]').tooltip()
+})
+
+//animation
+$('.logo').on('mouseover', () => $('.logo-img').removeClass('reverse').addClass('rotate'));
+$('.logo').on('mouseout', () => $('.logo-img').removeClass('rotate').addClass('reverse'));

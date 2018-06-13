@@ -67,7 +67,7 @@ h2 {
 	font-size: 1.8rem;
 }
 
-.logo img {
+.header-logo img {
 	width: 2.5rem;
 	height: 2.5rem;
 }
@@ -506,17 +506,64 @@ footer img {
 	outline: none;
 	box-shadow: 0 0 2px white;
 }
-.logo a,
-.footer-logo a {
-	
+.logo a {
 	transition: color, 0.5s;
 }
 
-.logo a:hover,
-.footer-logo a:hover {
+.logo a:hover {
 	text-decoration: none;
 	color: #67bf95;
+	
 }
+
+@-webkit-keyframes rotate {
+	to {
+		-webkit-transform: scale(1.3) rotateZ(90deg);
+		        transform: scale(1.3) rotateZ(90deg);
+	}
+}
+@keyframes rotate {
+	to {
+		-webkit-transform: scale(1.3) rotateZ(90deg);
+		        transform: scale(1.3) rotateZ(90deg);
+	}
+}
+@-webkit-keyframes reverse {
+	from{
+		-webkit-transform: scale(1.3) rotateZ(90deg);
+		        transform: scale(1.3) rotateZ(90deg);
+	}
+	to {
+		-webkit-transform: scale(1) rotateZ(0deg);
+		        transform: scale(1) rotateZ(0deg);
+	}
+}
+@keyframes reverse {
+	from{
+		-webkit-transform: scale(1.3) rotateZ(90deg);
+		        transform: scale(1.3) rotateZ(90deg);
+	}
+	to {
+		-webkit-transform: scale(1) rotateZ(0deg);
+		        transform: scale(1) rotateZ(0deg);
+	}
+}
+.rotate {
+	-webkit-animation-name: rotate;
+	        animation-name: rotate;
+	-webkit-animation-duration: 500ms;
+					animation-duration: 500ms;
+					-webkit-animation-fill-mode: forwards;
+					        animation-fill-mode: forwards;
+	
+}
+.reverse {
+	-webkit-animation-name: reverse;
+	        animation-name: reverse;
+	-webkit-animation-duration: 500ms;
+					animation-duration: 500ms;
+					
+					}
 
 .label-required {
 	position: relative;
