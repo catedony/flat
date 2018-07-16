@@ -1,3 +1,8 @@
+var video = document.querySelector('.bg-video');
+video.onmousemove = function (e) {
+	e.preventDefault();
+};
+
 //slider
 let slideIndex = 1;
 let plusSlides = n => showSlides(slideIndex += n);
