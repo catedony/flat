@@ -19,8 +19,12 @@
 
 <body>
 	
-	<header class="container-fluid py-4">
-		<video class="bg-video" autoplay muted loop src="img/VideoOfBusyCity.mp4" poster="img/header-bg.png" controlsList="nofullscreen nodownload noremote foobar"></video>
+	<header class="container-fluid py-4 header">
+		<video class="bg-video" autoplay muted loop poster="video/header/WorkingHouse.jpg" controlsList="nofullscreen nodownload noremote foobar">
+			<source src="video/header/WorkingHouse.mp4" type="video/mp4" />
+			<source src="video/header/WorkingHouse.webm" type="video/webm" />
+			<source src="video/header/WorkingHouse.ogv" type="video/ogv" />
+		</video>
 		<div class="container h-100 overlay">
 			<nav class="navbar px-0">
 				<div class="navbar-brand logo header-logo">
@@ -87,7 +91,7 @@
 
 	</header>
 	<main>
-		<article class="container-fluid about">
+		<section class="container-fluid about">
 			<div class="container">
 				<div class="row align-items-end">
 					<div class="col-md-3 paper d-none d-md-block"></div>
@@ -111,8 +115,8 @@
 					</div>
 				</div>
 			</div>
-		</article>
-		<article class="portfolio container-fluid">
+		</section>
+		<section class="portfolio container-fluid">
 			<div class="row">
 				<div class="col d-flex flex-column align-items-center">
 					<div>
@@ -134,8 +138,8 @@
 					</section>
 				</div>
 			</div>
-		</article>
-		<article class="sign-up container-fluid">
+		</section>
+		<section class="sign-up container-fluid">
 			<div class="container">
 				<div class="sign-up-text block-center d-flex flex-column align-items-center w-lg-75">
 					<h2 class="text-center">A wireframe is the primitive skeleton of your website.</h2>
@@ -182,15 +186,19 @@
 					</div>
 				</div>
 			</div>
-		</article>
+		</section>
 
-		<article class="video-container">
+		<section class="video-container">
 			<h2 class="text-center">A wireframe is the primitive skeleton of your website.</h2>
-				<video class="video" poster="img/video-poster.png" controls src="img/796795686.mp4"></video>
+				<video class="video" poster="video/demo/Sketch.jpg" controls>
+					<source src="video/demo/Sketch.mp4" type="video/mp4" />
+					<source src="video/demo/Sketch.webm" type="video/webm" />
+					<source src="video/demo/Sketch.ogv" type="video/ogv" />
+				</video>
 				
-		</article>
+		</section>
 
-		<article class="message container-fluid">
+		<section class="message container-fluid">
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="mail-icon "></div>
@@ -229,7 +237,7 @@
 					</div>
 				</form>
 			</div>
-		</article>
+		</section>
 	</main>
 
 	<footer class="container-fluid">

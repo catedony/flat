@@ -1,7 +1,10 @@
-var video = document.querySelector('.bg-video');
-video.onmousemove = function (e) {
-	e.preventDefault();
-};
+//header
+const video = document.querySelector('.bg-video');
+const header = document.querySelector('.header');
+
+const adjustHeader = () => header.style.maxHeight = video.offsetHeight + 'px';
+adjustHeader();
+window.onresize = adjustHeader;
 
 //slider
 let slideIndex = 1;
