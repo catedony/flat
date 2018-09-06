@@ -13,17 +13,19 @@ var gulp = require('gulp'),
     // rename = require("gulp-rename"),
     uglify = require('gulp-uglify');
 
-var outputDir = 'builds/development/';
-var env = process.env.NODE_ENV || 'development';
+var outputDir,
+		env;
+
+env = process.env.NODE_ENV || 'development';
 
 if (env==='development') {
-  outputDir = 'builds/development/';
+  outputDir = 'development/';
 } else {
-  outputDir = 'builds/production/';
+  outputDir = 'production/';
 }
 
 gulp.task('html', function() {
-  gulp.src('builds/development/*.html')
+  gulp.src('development/*.html')
     .pipe(gulpif(env === 'production', htmlmin({collapseWhitespace: true})))
     .pipe(gulpif(env === 'production', gulp.dest(outputDir)))
     .pipe(connect.reload());
@@ -56,7 +58,7 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('img', function() {
-      gulp.src('builds/development/img/*.*') 
+      gulp.src('development/img/*.*') 
       .pipe(gulpif(env === 'production', imagemin({ 
           interlaced: true,
           progressive: true,
@@ -75,8 +77,8 @@ gulp.task('connect', function() {
 });
 
 gulp.task('video', function() {
-  gulp.src('builds/development/video/**/*')
-  .pipe(gulpif(env === 'production', gulp.dest('builds/production/video')));
+  gulp.src('development/video/**/*')
+  .pipe(gulpif(env === 'production', gulp.dest('production/video')));
 });
 // gulp.task('stream', ['webserver', 'css', 'scripts'], function () {
 //   // Endless stream mode
@@ -85,9 +87,9 @@ gulp.task('video', function() {
 // });
 gulp.task('watch', function() {
   gulp.watch('src/*.css', ['css']);
-  gulp.watch('builds/development/*.html', ['html']);
+  gulp.watch('development/*.html', ['html']);
   gulp.watch('src/*.js', ['scripts']);
-  gulp.watch('builds/development/img/**/*.*', ['img']);
+  gulp.watch('development/img/**/*.*', ['img']);
 });
 
 gulp.task('default', ['html', 'css', 'scripts', 'img', 'video', 'connect', 'watch']);
