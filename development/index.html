@@ -13,14 +13,14 @@
 	
 
 	<link rel="stylesheet" href="css/style.css">
-
+	<link rel="icon" href="img/favicon-logo.ico" type="image/x-icon">
 	<title>Flat Mate</title>
 </head>
 
 <body>
 	
 	<header class="container-fluid py-4 header">
-		<video class="bg-video" autoplay muted loop poster="video/header/WorkingHouse.jpg" controlsList="nofullscreen nodownload noremote foobar">
+		<video class="bg-video" autoplay muted loop poster="video/header/WorkingHouse.jpg" aria-hidden="true">
 			<source src="video/header/WorkingHouse.mp4" type="video/mp4" />
 			<source src="video/header/WorkingHouse.webm" type="video/webm" />
 			<source src="video/header/WorkingHouse.ogv" type="video/ogv" />
@@ -29,19 +29,19 @@
 			<nav class="navbar px-0">
 				<div class="navbar-brand logo header-logo">
 					<a href="#">
-						<img src="img/logo.png" alt="logo" class="logo-img img-fluid mr-3">
-						<span class="logo-text align-middle">Flat Mate</span>
+						<img src="img/logo.png" alt="green circle" class="logo-img img-fluid mr-3">
+						<h1 class="logo-text align-middle">Flat Mate</h1>
 					</a>
 				</div>
 				<div class="navbar-text login">
 					<span class="mr-3 question">Have an account?</span>
-					<a class="btn btn-login" data-toggle="modal" data-target="#loginModal">Login</a>
+					<button class="btn btn-login" data-toggle="modal" data-target="#loginModal">Login</button>
 				</div>
-				<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
 					<div class="modal-dialog modal-dialog-centered " role="document">
 						<div class="modal-content">
 							<div class="modal-header">
-								<h5 class="modal-title" id="loginModalLabel">Sign in</h5>
+								<h2 class="modal-title" id="loginModalLabel">Sign in</h2>
 								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 									<span aria-hidden="true">&times;</span>
 								</button>
@@ -76,7 +76,7 @@
 			<div class="row  d-flex align-items-center">
 				<div class="col-lg-6 col-sm-8">
 					<div class="promo">
-						<h1 class="serif">Lorem ipsum dolor sit amet</h1>
+						<h2 class="serif">Lorem ipsum dolor sit amet</h2>
 						<p class="py-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque vitae eligendi quas labore aliquam </p>
 						<a href="#" class="btn btn-more">Read more</a>
 					</div>
@@ -103,12 +103,12 @@
 					</div>
 					<div class="col-sm-1 col-md-2 social-icon align-self-start d-flex d-sm-block justify-content-end">
 						<div class="mr-4 mr-sm-0">
-							<a class="icon icon-reg" href="#" data-toggle="tooltip" data-placement="bottom" title="Register">
+							<a class="icon icon-reg" href="#" data-toggle="tooltip" data-placement="bottom" title="Register" aria-label="Register">
 								<i class="fa fa-pencil" aria-hidden="true"></i>
 							</a>
 						</div>
 						<div>
-							<a href="#" class="icon icon-fb" data-toggle="tooltip" data-placement="bottom" title="Register with Facebook">
+							<a href="#" class="icon icon-fb" data-toggle="tooltip" data-placement="bottom" title="Register with Facebook" aria-label="Register with Facebook">
 								<i class="fa fa-facebook" aria-hidden="true"></i>
 							</a>
 						</div>
@@ -124,6 +124,7 @@
 						<p class="text-left">We make wireframe ultrafast, leak proof</p>
 					</div>
 					<section class="slider px-md-5 mx-md-5">
+						<h3 class="title_sr-only">Portfolio</h3>
 						<div class="slides fade">
 								<img src="img/slider1.png" class="img-fluid" alt="">
 						</div>
@@ -133,8 +134,8 @@
 						<div class="slides fade">
 								<img src="img/slider3.png" class="img-fluid" alt="">
 						</div>
-						<a class="slider-btn prev" onclick="plusSlides(-1)"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
-						<a class="slider-btn next" onclick="plusSlides(1)"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+						<button class="slider-btn prev" onclick="plusSlides(-1)"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+						<button class="slider-btn next" onclick="plusSlides(1)"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
 					</section>
 				</div>
 			</div>
@@ -149,9 +150,9 @@
 				<div class="row justify-content-center block-center price-list px-lg-5">
 					<div class="col-10 col-md-4">
 						<section class="var var-1 text-center block-center mx-lg-4">
-							<h5 class="card-title">Free</h5>
+							<h3 class="card-title">Free</h3>
 							<div class="card-body">
-								<h6 class="card-subtitle mb-md-2">$0/Month</h6>
+								<h4 class="card-subtitle mb-md-2">$0/Month</h4>
 								<p class="card-text">1 Project</p>
 								<p class="card-text">5 Members</p>
 								<p class="card-text">5 GB</p>
@@ -162,9 +163,9 @@
 
 					<div class="col-10 col-md-4">
 						<section class="var var-2 text-center block-center mx-lg-4">
-							<h5 class="card-title  mt-4 mt-md-0">Professional</h5>
+							<h3 class="card-title  mt-4 mt-md-0">Professional</h3>
 							<div class="card-body">
-								<h6 class="card-subtitle mb-md-2">$50/Month</h6>
+								<h4 class="card-subtitle mb-md-2">$50/Month</h4>
 								<p class="card-text">20 Projects</p>
 								<p class="card-text">50 Members</p>
 								<p class="card-text">100 GB</p>
@@ -174,9 +175,9 @@
 					</div>
 					<div class="col-10 col-md-4">
 						<section class="var var-3 text-center block-center mx-lg-4">
-							<h5 class="card-title mt-4 mt-md-0">Enterprise</h5>
+							<h3 class="card-title mt-4 mt-md-0">Enterprise</h3>
 							<div class="card-body">
-								<h6 class="card-subtitle mb-md-2">$90/Month</h6>
+								<h4 class="card-subtitle mb-md-2">$90/Month</h4>
 								<p class="card-text">Unlimitted</p>
 								<p class="card-text">Unlimitted</p>
 								<p class="card-text">500 GB</p>
@@ -199,6 +200,7 @@
 		</section>
 
 		<section class="message container-fluid">
+			<h2 class="title_sr-only">Send Message</h2>
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="mail-icon "></div>
@@ -210,7 +212,7 @@
 							<div>
 								<label for="name" class="col-form-label label-required">Name</label>
 								<div>
-									<input type="name" class="form-control field-color" id="name" required>
+									<input type="text" class="form-control field-color" id="name" required>
 								</div>
 							</div>
 							<div class="">
@@ -241,11 +243,13 @@
 	</main>
 
 	<footer class="container-fluid">
+		<h2 class="title_sr-only">Footer</h2>
 		<div class="container">
 			<nav class="navbar navbar-expand-md justify-content-between px-0">
+				<h3 class="title_sr-only">Logo</h3>
 				<div class="navbar-brand  logo footer-logo  flex-column flex-md-row  d-flex align-items-md-end">
 					<a href="#" class="d-flexalign-items-center">
-						<img src="img/logo.png" alt="logo" class="logo-img img-responsive">
+						<img src="img/logo.png" alt="green circle" class="logo-img img-responsive">
 						<span class="ml-2">Flat Mate |</span>
 					</a>
 					<span class="small ml-md-2"> Designed By
@@ -255,11 +259,11 @@
 				<div class="footer-social-icon">
 
 
-					<a href="#" class="navbar-link soc-icon soc-icon_tw mr-4">
+					<a href="#" class="navbar-link soc-icon soc-icon_tw mr-4" aria-label="Twitter">
 						<i class="fa fa-twitter" aria-hidden="true"></i>
 					</a>
 
-					<a href="#" class="navbar-link soc-icon soc-icon_fb">
+					<a href="#" class="navbar-link soc-icon soc-icon_fb" aria-label="Facebook">
 						<i class="fa fa-facebook" aria-hidden="true"></i>
 					</a>
 
