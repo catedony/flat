@@ -21,7 +21,7 @@ env = process.env.NODE_ENV || 'development';
 if (env==='development') {
   outputDir = 'development/';
 } else {
-  outputDir = 'production/';
+  outputDir = 'docs/';
 }
 
 gulp.task('html', function() {
